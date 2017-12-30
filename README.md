@@ -19,7 +19,7 @@ Than, use the following commands to install Apache2, PHP and myDrop
 
 > wget https://github.com/szalewicz/myDrop/archive/master.zip
 
-> unzip myDrop-master.zip
+> unzip master.zip
 
 > cd myDrop-master
 
