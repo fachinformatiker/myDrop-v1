@@ -42,3 +42,10 @@ Than, use the following commands to install Apache2, PHP and myDrop
 ### RUN
 
 http://IP-OF-YOUR-PI/index.html
+
+
+
+
+Feel free to write my an e-mail: **info@sysop.top**  :speech_balloon:
+
+:+1:
