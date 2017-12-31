@@ -1,8 +1,8 @@
 <?php
 
-$kamera = "17";
-$ventil1 = "18";
-$ventil2 = "19";
-$blitz = "20";
+$kamera = "22";
+$ventil1 = "12";
+$ventil2 = "16";
+$blitz = "29";
 
 ?>
