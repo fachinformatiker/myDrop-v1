@@ -23,7 +23,7 @@ Than, use the following commands to install Apache2, PHP and myDrop
 
 > cd myDrop-master
 
-> mv * /var/www/html/
+> sudo mv * /var/www/html/
 
  <br />
 
