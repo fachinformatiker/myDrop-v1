@@ -25,6 +25,8 @@ Than, use the following commands to install Apache2, PHP and myDrop
 
 > sudo mv * /var/www/html/
 
+> sudo chmod -R 777 /var/www/html/*
+
 > sudo adduser www-data gpio
 
 > sudo systemctl restart apache2
