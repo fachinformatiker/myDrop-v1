@@ -18,21 +18,28 @@ $w3 = $x_w3 * 1000;
 $w4 = $x_w4 * 1000;
 $blitzdauer = xblitzdauer * 1000;
 
-exec("gpio write ". $kamera ." 1");
+$content = $w1 . ";" . $d1 . ";" . $w2 . ";" . $d2 . ";" . $w3 . ";" . $w4;
+
+$file = fopen('storage1v2t.txt', 'w');
+fwrite($file, $content);
+
+shell_exec("gpio -1 write ". $kamera ." 1");
 usleep($w1);
-exec("gpio write ". $ventil1 ." 1");
+shell_exec("gpio -1 write ". $ventil1 ." 1");
 usleep($d1);
-exec("gpio write ". $ventil1 ." 0");
+shell_exec("gpio -1 write ". $ventil1 ." 0");
 usleep($w2);
-exec("gpio write ". $ventil1 ." 1");
+shell_exec("gpio -1 write ". $ventil1 ." 1");
 usleep($d2);
-exec("gpio write ". $ventil1 ." 0");
+shell_exec("gpio -1 write ". $ventil1 ." 0");
 usleep($w3);
-exec("gpio write ". $blitz ." 1");
+shell_exec("gpio -1 write ". $blitz ." 1");
 usleep($blitzdauer);
-exec("gpio write ". $blitz ." 0");
+shell_exec("gpio -1 write ". $blitz ." 0");
 usleep($w4);
-exec("gpio write ". $kamera ." 0");
+shell_exec("gpio -1 write ". $kamera ." 0");
+
+fclose($file);
 
 header('Location: ' . $_SERVER['HTTP_REFERER']);
 

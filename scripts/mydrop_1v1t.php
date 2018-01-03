@@ -14,6 +14,11 @@ $w2 = $x_w2 * 1000;
 $w3 = $x_w3 * 1000;
 $blitzdauer = $xblitzdauer * 1000;
 
+$content = $w1 . ";" . $d1 . ";" . $w2 . ";" . $w3;
+
+$file = fopen('storage1v1t.txt', 'w');
+fwrite($file, $content);
+
 shell_exec("gpio -1 mode ". $kamera  ." out");
 shell_exec("gpio -1 mode ". $ventil1  ." out");
 shell_exec("gpio -1 mode ". $blitz  ." out");
@@ -30,6 +35,7 @@ shell_exec("gpio -1 write ". $blitz ." 0");
 usleep($w3);
 shell_exec("gpio -1 write ". $kamera ." 0");
 
-header('Location: ' . $_SERVER['HTTP_REFERER']);
+fclose($file);
 
+header('Location: ' . $_SERVER['HTTP_REFERER']);
 ?>
