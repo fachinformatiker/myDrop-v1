@@ -35,7 +35,7 @@ Than, use the following commands to install Apache2, PHP and myDrop
 
  <br />
  
-### CHANGE (in scripts/conf.php)
+### CHANGE (in conf.php)
 
 * $kamera = "22";
 * $ventil1 = "12";
