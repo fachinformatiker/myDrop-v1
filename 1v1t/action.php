@@ -20,21 +20,20 @@ $file = fopen('my_settings.txt', 'w');
 fwrite($file, $content);
 fclose($file);
 
-shell_exec("gpio -1 mode ". $kamera  ." out");
-shell_exec("gpio -1 mode ". $ventil1  ." out");
-shell_exec("gpio -1 mode ". $blitz  ." out");
-
-shell_exec("gpio -1 write ". $kamera ." 1");
-usleep($w1);
-shell_exec("gpio -1 write ". $ventil1 ." 1");
-usleep($d1);
-shell_exec("gpio -1 write ". $ventil1 ." 0");
-usleep($w2);
-shell_exec("gpio -1 write ". $blitz ." 1");
-usleep($blitzdauer);
-shell_exec("gpio -1 write ". $blitz ." 0");
-usleep($w3);
-shell_exec("gpio -1 write ". $kamera ." 0");
-
-header('Location: ' . $_SERVER['HTTP_REFERER']);
+	shell_exec("gpio -1 mode ". $kamera  ." out");
+	shell_exec("gpio -1 mode ". $ventil1  ." out");
+	shell_exec("gpio -1 mode ". $blitz  ." out");
+	shell_exec("gpio -1 write ". $kamera ." 1");
+	usleep($w1);
+	shell_exec("gpio -1 write ". $ventil1 ." 1");
+	usleep($d1);
+	shell_exec("gpio -1 write ". $ventil1 ." 0");
+	usleep($w2);
+	shell_exec("gpio -1 write ". $blitz ." 1");
+	usleep($blitzdauer);
+	shell_exec("gpio -1 write ". $blitz ." 0");
+	usleep($w3);
+	shell_exec("gpio -1 write ". $kamera ." 0");
+	
+	header('Location: ' . $_SERVER['HTTP_REFERER']);
 ?>

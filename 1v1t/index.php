@@ -41,7 +41,8 @@ myDrop
   <br><br>
   Belichtung stoppen
   <br><br><br>
-  <button>ausführen</button>
+  <button type="submit" formaction="./save_line.php">speichern</button>
+  <button type="submit">ausführen</button>
 </form>
 </center>
 </body>

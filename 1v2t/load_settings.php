@@ -14,7 +14,7 @@ myDrop
 <center>
 <br><br>
 <a href="../1v2t.html">Zurück</a>
-<br><br>
+<br><br><br>
 <?php
 $file = "settings.txt";
 $handle = fopen($file, "r");
