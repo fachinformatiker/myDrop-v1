@@ -17,7 +17,7 @@ Than, use the following commands to install Apache2, PHP and myDrop
 
 > sudo apt-get install apache2 php libapache2-mod-php -y
 
-> wget https://github.com/szalewicz/myDrop-v1/archive/master.zip
+> wget https://github.com/fachinformatiker/myDrop-v1/archive/master.zip
 
 > unzip master.zip
 
