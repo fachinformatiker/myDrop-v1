@@ -1,5 +1,5 @@
-# myDrop
-myDrop - Drop Remote for Raspberry Pi
+# myDrop-v1
+myDrop-v1 - Drop Remote for Raspberry Pi
 
  <br />
 
@@ -17,7 +17,7 @@ Than, use the following commands to install Apache2, PHP and myDrop
 
 > sudo apt-get install apache2 php libapache2-mod-php -y
 
-> wget https://github.com/szalewicz/myDrop/archive/master.zip
+> wget https://github.com/szalewicz/myDrop-v1/archive/master.zip
 
 > unzip master.zip
 
@@ -58,6 +58,6 @@ http://IP-OF-YOUR-PI/index.html
  
  <br />
 
-If you need help feel free to write my an e-mail: **info@sysop.top**  :speech_balloon:
+If you need help feel free to write my an e-mail: **github@fachinformatiker.app**  :speech_balloon:
 
 :+1:
